@@ -1,0 +1,113 @@
+
+/*----------------------------------------------------------------------
+ *
+ * [-----*** TABLE OF CONTENT ***-----]
+ *
+ * 1. Footer - footer
+ * 2. Footer - copyright
+ *
+ * [--- HEADER STYLE CLASSES --]
+ *
+ * 1. Footer V10
+ *
+ *
+-----------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------
+	[1. Footer - footer]
+----------------------------------------------------*/
+
+/*
+	footer
+*/
+.footer-v10 .footer {
+	padding: 0 0 30px;
+	background: #212121;
+}
+
+.footer-v10 .footer p {
+	color: #bbb;
+	font-size: 14px;
+}
+
+.footer-v10 h2.thumb-headline {
+	color: #ddd;
+	font-size: 16px;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+}
+
+.footer-v10 .simple-list li {
+	color: #bbb;
+}
+
+.footer-v10 .simple-list a {
+	color: #bbb;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.nav-footer{
+  display: table;
+  margin: 0 auto;
+}
+.nav-footer > ul {
+  display: inline-block;
+  width: 120px;
+  margin-left: 50px;
+  vertical-align: top;
+}
+.nav-footer > ul > li {
+  padding: 10px 0;
+}
+
+
+/*--------------------------------------------------
+	[1. Footer - copyright]
+----------------------------------------------------*/
+/*Copyright*/
+.footer-v10 .copyright {
+	padding: 15px 0;
+	border-top: none;
+	background: #191919;
+}
+
+.footer-v10 .copyright p {
+	color: #bbb;
+	font-size: 12px;
+	margin-top: 13px;
+	margin-bottom: 0;
+}
+
+.footer-v10 .copyright a {
+	color: #18ba9b;
+}
+
+.footer-v10 .sponsors-icons {
+	margin-bottom: 0;
+}
+
+.footer-v10 .sponsors-icons i {
+	color: #fff;
+	font-size: 40px;
+	/*add css style*/
+	opacity:.6;
+}
+.footer-v10 .copyright .separators{
+	opacity: .8;
+}
+@media (max-width: 991px) {
+	.footer-v10 .copyright {
+		text-align: center;
+	}
+
+	.footer-v10 .copyright p {
+		margin-bottom: 15px;
+	}
+
+	.footer-v10 .sponsors-icons.pull-right {
+		float: none !important;
+	}
+}
+
