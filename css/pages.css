@@ -1,7 +1,149 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding:0;
+}
+ul,ol,li{
+    list-style: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 @media screen and (max-width: 767px) {
     .blog-slider .blog-slider-title h2{
         font-size: 16px;
     }
+}
+
+/*
+在这里有你所需的一切 style start
+*/
+.all-wrapper{
+    min-width: 320px;
+    padding:60px 0;
+}
+.all-products{
+    background-image: url("../img/mod-bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.all-products-bg-color{
+    background-color: #eeeef4;
+}
+
+
+.flowerTab{
+	height: 190px;
+}
+.flowerTab ul{
+	height: 190px;
+	border-left: 1px solid #DDDDDD;
+	position: relative;
+}
+.flowerTab ul li{
+	height: 188px;
+	width: 50px;
+	border:1px solid #ddd;
+	border-left: 0;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	float: left;
+}
+.flowerTab ul li.active{
+	width: 439px;
+}
+.flowerTab ul li.folewr_last{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.flowerTab ul li h3{
+	font-size: 14px;
+	color: #000;
+	font-weight: normal;
+	width: 14px;
+	height: 128px;
+	padding: 60px 18px 0;
+}
+.flowerTab ul li h3.hover{
+	background: #f42760;
+}
+.flowerTab ul li div{
+	width: 386px;
+	height: 188px;
+	position: absolute;
+	left: 50px;
+	top: 0;
+	border-left: 1px solid #ddd;
+	padding: 25px 10px;
+	box-sizing: border-box;
+	line-height: 25px;
+}
+
+
+.con-show{
+    width:100%;
+    min-width: 320px;
+}
+.con-show .con-ul-show{
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+}
+.con-show .con-ul-show::after{
+    content: '';
+    width:100%;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.con-show .con-ul-show .con-ul-show-li{
+    position: relative;
+    width: 198px;
+    height: 398px;
+    border:1px solid red;
+}
+
+.con-show .con-ul-show .con-ul-show-li.active{
+    width: 346px;
+}
+.con-show .con-ul-show .con-ul-show-li h3{
+    width:200px;
+    height:100%;
+}
+.con-show .con-ul-show .con-ul-show-li .active-div{
+    display: none;
+    width: 346px;
+	height: 398px;
+	position: absolute;
+	left: -1px;
+	top: 0;
+	border-left: 1px solid #ddd;
+	padding: 25px 10px;
+	box-sizing: border-box;
+	line-height: 25px;
+    background: red;
+}
+.con-show .con-ul-show .con-ul-show-li.active .active-div{
+	display: block;
+}
+
+/*
+在这里有你所需的一切 style end
+*/
+
+.icon-badge{
+    font-family:'Simple-Line-Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
 }
