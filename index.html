@@ -30,6 +30,7 @@
 
 	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="plugins/animate.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
 	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="plugins/master-slider/masterslider/style/masterslider.css">
 	<link rel="stylesheet" href="plugins/master-slider/masterslider/skins/default/style.css">
@@ -324,37 +325,80 @@
         </div>
         <!-- End Master Slider -->
 
-        <!--block-v1-->
-        <div class="about-section section-first">
-            <div class="block-v1">
-                <div class="container">
-                    <div class="row content-boxes-v3">
-                        <div class="col-md-4 col-sm-4 col-xs-12 md-margin-bottom-30">
-                            <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
-                            <div class="content-boxes-in-v3">
-                                <h2 class="heading-sm">开发者专属平台</h2>
-                                <p>创新实验室</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12 md-margin-bottom-30">
-                            <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
-                            <div class="content-boxes-in-v3">
-                                <h2 class="heading-sm">云套餐</h2>
-                                <p>新技术、云计算</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
-                            <div class="content-boxes-in-v3">
-                                <h2 class="heading-sm">云计算平台</h2>
-                                <p>更好体验、及时反馈、时时更新</p>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row margin-bottom-10">
+                <div class="col-sm-4">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom rounded icon-color-dark icon-line icon-badge"></i>
+                        <h2 class="heading-md">服务器</h2>
+                        <p>常见web服务器，分享资源文档</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom rounded icon-color-dark icon-line icon-fire"></i>
+                        <h2 class="heading-md">新技术</h2>
+                        <p>2017新技术 云计算 未来</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom rounded icon-color-dark icon-line icon-directions"></i>
+                        <h2 class="heading-md">反馈</h2>
+                        <p>体验 反馈 更新</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--block-v1-->
+
+        <!--start Everything-->
+        <div class="all-wrapper all-products-bg-color">
+            <div class="all-products">
+                <div class="container">
+                    <div class="con-show">
+                        <ul class="con-ul-show">
+                            <li class="active con-ul-show-li left">
+                                <h3>云计算</h3>
+                                <div class="active-div">
+                                    云计算
+                                </div>
+                            </li>
+                            <li class="con-ul-show-li left">
+                                <h3>云计算</h3>
+                                <div class="active-div">
+                                    云计算
+                                </div>
+                            </li>
+                            <li class="con-ul-show-li left">
+                                <h3>云计算</h3>
+                                <div class="active-div">
+                                    云计算
+                                </div>
+                            </li>
+                            <li class="con-ul-show-li left">
+                                <h3>云计算</h3>
+                                <div class="active-div">
+                                    云计算
+                                </div>
+                            </li>
+                            <li class="con-ul-show-li right">
+                                <h3>云计算</h3>
+                                <div class="active-div">
+                                    云计算
+                                </div>
+                            </li>
+                            <!--<li class="con-ul-show-li left">
+                                <h3>云计算</h3>
+                                <div class="active-div">
+                                    云计算
+                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end Everything-->
 
 
 
@@ -399,7 +443,17 @@
 
     <!--解决IE低版本下对placeholder的支持-->
     <script type="text/javascript">
-        $('input,textarea').placeholder()
+       /* $('input,textarea').placeholder()*/
+
+        $(".flowerTab ul li").mouseover(function(){
+            var $index = $(this).index(); //手风琴的下标
+            $(this).stop().animate({"width":"439px"},300).siblings("li").stop().animate({"width":"50px"},300);
+            $(this).find("h3").addClass("hover").parent().siblings().find("h3").removeClass();
+
+            $(".flowerFlash div").eq($index).show().stop().siblings().hide();
+
+        });
+
     </script>
 
     <script>
