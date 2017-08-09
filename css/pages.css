@@ -13,6 +13,7 @@ ul,ol,li{
 .right{
     float: right;
 }
+
 @media screen and (max-width: 767px) {
     .blog-slider .blog-slider-title h2{
         font-size: 16px;
@@ -93,7 +94,6 @@ ul,ol,li{
 .con-show .con-ul-show{
     position: relative;
     width: 100%;
-    border: 1px solid #000;
 }
 .con-show .con-ul-show::after{
     content: '';
@@ -104,16 +104,21 @@ ul,ol,li{
 }
 .con-show .con-ul-show .con-ul-show-li{
     position: relative;
-    width: 198px;
-    height: 398px;
-    border:1px solid red;
+    width: 17.42%;
+    height: 400px;
+	padding:0 15px;
+	box-sizing: border-box;
+    border-top: 4px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+	cursor: pointer;
 }
 
 .con-show .con-ul-show .con-ul-show-li.active{
-    width: 346px;
+    width: 345px;
+	/*top: -27px;*/
 }
 .con-show .con-ul-show .con-ul-show-li h3{
-    width:200px;
+    /*width:200px;*/
     height:100%;
 }
 .con-show .con-ul-show .con-ul-show-li .active-div{
@@ -129,8 +134,165 @@ ul,ol,li{
 	line-height: 25px;
     background: red;
 }
-.con-show .con-ul-show .con-ul-show-li.active .active-div{
+
+.mod-content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+}
+.mod-content .mod-content-title::after{
+	content: "";
 	display: block;
+	width: 40px;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	background-color: #D9D9D9;
+	margin-left: -20px;
+}
+.mod-content .mod-content-title{
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.icon-width-height{
+	width: 32px;
+	height: 32px;
+	font-size: 30px;
+}
+.mod-content .mod-content-title .mod-content-img{
+	display: block;
+	margin: 0 auto 15px;
+}
+.mod-content .mod-content-title h3{
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+
+.mod-content .mod-content-sub-menu .menu-lists{
+	/*background-color: blue;*/
+}
+.mod-content .mod-content-sub-menu .menu-lists li{
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+}
+.mod-content .mod-content-sub-menu .menu-lists li .span-label{
+	font-size: 12px;
+	margin-left: 3px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.con-ul-show-li .big-show-content{
+	display: none;
+}
+
+/*.con-ul-show-li.active.active-show .big-show-content{*/
+	/*display: block;*/
+/*}*/
+.con-ul-show-li.active .big-show-content{
+	display: block;
+	position: absolute;
+	top: -27px;
+	left: 0;
+	width: 345px;
+	background-color: #fff;
+    border-top: 4px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+	padding:15px 0;
+}
+.con-ul-show-li.active .big-show-content .mod-content-title{
+	position: relative;
+	padding: 20px 0;
+	margin-right: 15px;
+	margin-left: 15px;
+	border-bottom: 1px solid #d9d9d9;
+}
+.con-ul-show-li.active .big-show-content .mod-content-title .mod-content-img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	color: blue;
+}
+.con-ul-show-li.active .big-show-content .mod-content-title h3{
+	display: inline-block;
+	font-size: 18px;
+	color: blue;
+}
+
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu{
+	margin-top: 10px;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .menu-lists li:hover{
+	background-color: #eee;
+	cursor: pointer;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .menu-lists li{
+	min-height: 72px;
+	text-align: left;
+	font-size: 14px;
+	color: #666;
+	padding: 5px 20px 8px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .menu-lists li h3{
+	color: #000;
+	display: block;
+	font-size: 14px;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .menu-lists li p{
+	margin: 0 0;
+}
+.normal-display-block{
+	display: block;
+}
+.normal-display-none{
+	display: none;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .menu-lists li:hover .hover-display-none{
+	display: none;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .menu-lists li:hover .hover-display-block{
+	display: block;
+}
+
+.menu-lists-right-menu{
+	color: #ff7200;
+}
+.menu-lists-pay{
+	padding: 0 16px;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 2px;
+	color: #2277e6;
+	border: 1px solid #2277e6;
+	margin-top: -6px;
+	font-weight: normal;
+}
+.menu-lists-pay:hover{
+	text-decoration: none;
+	background-color: #2277e6;
+	color: #fff;
+}
+.con-ul-show-li.active .big-show-content .mod-content-sub-menu .hover-text-decoration{
+	font-size: 14px;
+	color: #2277e6;
+	margin: 0 20px;
+	padding-top: 5px;
 }
 
 /*
@@ -146,4 +308,8 @@ ul,ol,li{
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+}
+
+.aaa{
+	border:1px solid red;
 }

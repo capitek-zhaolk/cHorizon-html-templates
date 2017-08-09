@@ -284,3 +284,25 @@
 .star-rating.Five i {
   color: #E6CE31;
 }
+
+.service-block,
+.service-block h2 {
+	cursor: pointer;
+	transition: color 0.5s ease-in,color 0.5s ease-out;
+}
+.service-block i{
+	transition: all 0.5s ease-in,all 0.5s ease-out;
+}
+.service-block:hover h2{
+	color: #00B6EA;
+}
+.service-block:hover i{
+	font-size: 20px;
+}
+
+.mod-wrap{
+	background: #fafafa;
+}
+.service-block.service-block-margin{
+	margin-bottom: 0;
+}
